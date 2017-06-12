@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+	  #startW:hover {
+		-webkit-filter: hue-rotate(-140deg) saturate(2.3);
+		-webkit-transition: 1s;
+	  }
+	  #startW {
+		-webkit-transition: 1s;
+	  }
+	  input[type=text] {
+	    padding-right:600px;font-size:52px;margin-top:650px;margin-left:250px;position:absolute;
+	  }
+	  #logo {
+		white-space: nowrap;position:absolute;text-align: left; font-size: 46px; color: #00a204;
+	  }
+	  #start {
+		position: absolute;margin-left:300px;margin-top:140px;
+		transition: margin 3s;
+	  }
+	  #half1 {
+	    position: absolute;margin-left:-100px;
+		transition: margin 3s;
+	  }
+	  #half2 {
+		position: absolute;margin-left:831px;
+		transition: margin 3s;
+	}
+	  body, html { height:100%; }
+
+	  #myCanvas {
+		position:absolute;
+	  }
+	  #fourmBanner {
+		display: block;
+		margin: auto !important;
+		width:40%;
+	  }
+	  #fourmWrapper {
+		opacity: .75;
+		position:absolute;
+		bottom:0%;
+		width:100%;
+		pointer-events:none;
+		background-color:#1a1a1a !important;
+	  }
+	</style>
+  </head>
+  <body style="background-color: #0a0a0a;" id="main">
+    <div id="body">
+    <div style="width:100%;height:100%;position:fixed;display:inline-block;white-space: nowrap;top: 37%; left: 50%;  margin-top: -300px; margin-left: -800px;">
+	  <p id="logo"></p>
+	  <img src="sprites/half1.png" id="half1">
+	  <img src="sprites/half2.png" id="half2">
+	  <div id="startW"><img onClick="Start()" src="sprites/startButton.png" id="start"></div>
+	  <input type="text" placeholder="Search Google or type Url" id="searchBar">
+	</div>
+	</div>
+	<script src="main.js"></script>
+ </body>
+</html>
